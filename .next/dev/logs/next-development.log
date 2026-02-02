@@ -1,0 +1,128 @@
+[00:00:01.872] Server  LOG     ✓ Ready in 1345ms
+[00:00:05.989] Server  LOG     ○ Compiling / ...
+[00:00:10.021] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.793] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-arp=""
+                        >
+                          ...
+                            <div style={{...}} className="jsx-e74eb8...">
+                              <FloatingFlowers className="jsx-e74eb8...">
+                                <div className="fixed inse...">
+                                  <div
+                                    className="absolute text-3xl md:text-4xl opacity-50"
+                                    style={{
++                                     left: "8.129311266008909%"
+-                                     left: "61.8918%"
++                                     top: "32.12179395585032%"
+-                                     top: "88.6461%"
++                                     animation: "floatFlower 14.899581641962833s infinite ease-in-out"
++                                     animationDelay: "1.9444606366306956s"
++                                     filter: "drop-shadow(0 4px 8px rgba(163, 127, 111, 0.2))"
+-                                     filter: "drop-shadow(rgba(163, 127, 111, 0.2) 0px 4px 8px)"
+-                                     animation-duration: "12.8933s"
+-                                     animation-timing-function: "ease-in-out"
+-                                     animation-iteration-count: "infinite"
+-                                     animation-direction: "normal"
+-                                     animation-fill-mode: "none"
+-                                     animation-play-state: "running"
+-                                     animation-name: "floatFlower"
+-                                     animation-timeline: "auto"
+-                                     animation-range-start: "normal"
+-                                     animation-range-end: "normal"
+-                                     animation-delay: "2.13923s"
+                                    }}
+                                  >
++                                   🌺
+-                                   🌷
+                                  ...
+                              ...
+                  ...
+
+[00:00:11.627] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.255] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+                  <SegmentViewNode type="page" pagePath="page.jsx">
+                    <SegmentTrieNode>
+                    <ClientPageRoot Component={function VintageValentineProposal} serverProvidedParams={{...}}>
+                      <VintageValentineProposal params={Promise} searchParams={Promise}>
+                        <div style={{...}} className="jsx-e74eb8...">
+                          <FloatingFlowers className="jsx-e74eb8...">
+                            <div className="fixed inse...">
+                              <div
+                                className="absolute text-3xl md:text-4xl opacity-50"
+                                style={{
++                                 left: "75.09623983841138%"
+-                                 left: "62.5992%"
++                                 top: "44.37073666277305%"
+-                                 top: "48.262%"
++                                 animation: "floatFlower 16.89794452016753s infinite ease-in-out"
++                                 animationDelay: "0.35365802673850644s"
++                                 filter: "drop-shadow(0 4px 8px rgba(163, 127, 111, 0.2))"
+-                                 filter: "drop-shadow(rgba(163, 127, 111, 0.2) 0px 4px 8px)"
+-                                 animation-duration: "12.131s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "floatFlower"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.27298s"
+                                }}
+                              >
++                               🌷
+-                               ✨
+                              ...
+                          ...
+                  ...
+                ...
+
